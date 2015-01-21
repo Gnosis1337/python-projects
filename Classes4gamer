@@ -1,0 +1,73 @@
+from sys import exit
+import webbrowser
+
+def library_room():
+	print """ At your finger tips you stand in front of the current edge of human knowledge\n
+	, as such is the life of a mage of the Oathsworn , you cast a spell incinerating the records \n
+	in seconds centuries of knowledge is obliterated. You must now make your escape. Will you teleport? \n 
+	or walk? """
+	choice = raw_input("> ")
+	if choice == "teleport":
+		hallway_room()
+	elif choice == walk:
+		dragon_room()
+
+def ruby():
+	print """ Behind the Ruby door lies a world of infinite Jello. \n 
+	how would you like to proceed? \n 
+	1 Grab a spoon and eat the world? or 2 Do you rub it all over your body?"""
+	choice = raw_input("> ")
+	
+
+def onyx():
+	print """ You have chosen the Onyx door, which leads you to Southside Queens NY circa.....
+	1993. It seems you have chosen to just slam and let the boys be boys. """
+	url = 'www.youtube.com/watch?v=RD8tc0Fq9Bk'
+	webbrowser.open_new(url)
+	print """ Now that you have Onyx playing in the background.......\n 
+	You can now call yourself a QB Thug. What's your next move son!? \n
+	Do you want to 1 return to the world of fantasy? or 2 do you want to go deeper? """
+	choice = raw_input("> ")
+	if choice == "1":
+		hallway_room()
+	elif choice == "2":
+		print """ You find yourself standing in front of the ominous QB projects \n
+		listening to the infamous Mobb Deep , with the free style being observed by Nasir Jones \n
+		Do you want to join the freestyle? Yes or No? """
+		choice = raw_input("> ")
+		if choice == "Yes":
+		    print " You got served son !"
+		elif choice == "No":
+			print " You observe quietly" 
+
+
+def dead():
+	print " \nBad Move! You have been destroyed ! The world will never hear from you again."
+	exit(0)
+	
+def hallway_room():
+	print """ You have escaped into a massive hallway \n
+	The hallway contains five doors. \n
+	The doors are made from Onyx, Ruby, Platinum, Quartz, Jade.\n
+	Choose your door! """
+	choice = raw_input("> ")
+	if choice == "onyx":
+		onyx()
+	
+
+def dragon_room():
+	print """ This room contains Smaug the Dragon. The final Battle is at hand! \n
+	What will you do? 1 Run 2 Fight 3 Hide\n """
+	choice = raw_input("> ")
+	if choice == "1":
+		hallway_room()
+	elif choice == "2":
+		dead()
+	else :
+	   print " What the hell is that going to do!? \n" 
+	   
+	   dragon_room()
+	
+
+
+		
