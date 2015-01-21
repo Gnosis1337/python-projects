@@ -1,0 +1,13 @@
+import Classes4gamer
+
+print """
+Welcome to a new reality........a reality that brings all your games to life.\n
+Please choose your class. Press 1 for Warrior, 2 for Mage, 3 for Thief. \n  """
+
+prompt = "> "
+choice = raw_input(prompt)
+
+if choice == "1":
+	Classes4gamer.dragon_room()
+elif choice == "2":
+	Classes4gamer.library_room()
